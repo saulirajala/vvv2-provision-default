@@ -25,7 +25,7 @@ if [[ ! -d "${VVV_PATH_TO_SITE}/public_html" ]]; then
   cd ${VVV_PATH_TO_SITE}/public_html
 
   echo "Configuring WordPress Stable..."
-  noroot wp core config --dbname=${VVV_SITE_NAME}--dbuser=wp --dbpass=wp --quiet --extra-php <<PHP
+  noroot wp core config --dbname=${VVV_SITE_NAME} --dbuser=wp --dbpass=wp --quiet --extra-php <<PHP
 // Match any requests made via xip.io.
 if ( isset( \$_SERVER['HTTP_HOST'] ) && preg_match('/^(local.wordpress.)\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}(.xip.io)\z/', \$_SERVER['HTTP_HOST'] ) ) {
     define( 'WP_HOME', 'http://' . \$_SERVER['HTTP_HOST'] );
