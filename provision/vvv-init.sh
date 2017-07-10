@@ -32,7 +32,11 @@ if ( isset( \$_SERVER['HTTP_HOST'] ) && preg_match('/^(local.wordpress.)\d{1,3}\
     define( 'WP_SITEURL', 'http://' . \$_SERVER['HTTP_HOST'] );
 }
 
-define( 'WP_DEBUG', true );
+define('WP_ENV','development');
+define('DISALLOW_FILE_MODS', false);
+define('WP_DEBUG', true);
+define('WP_DEBUG_LOG', true);
+define('WP_DEBUG_DISPLAY', false);
 PHP
 
   echo "Installing WordPress Stable..."
