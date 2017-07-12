@@ -13,3 +13,4 @@ sites:
 ```
 
 After that you can provision the VVV2 by `vagrant provision --provision-with=site-INSTALLATION_NAME`
+Voilà! You should now have all the necessary files for new WordPress installation
