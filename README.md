@@ -13,4 +13,8 @@ sites:
 ```
 
 After that you can provision the VVV2 by `vagrant provision --provision-with=site-INSTALLATION_NAME`
-Voilà! You should now have all the necessary files for new WordPress installation
+Voilà! You have now fresh WordPress-installation in your new VVV2-environment
+
+
+## What else?
+Be sure also to check my instructions about migrating from VVV1 to VVV2: https://github.com/saulirajala/migrate-vvv1-to-vvv2
